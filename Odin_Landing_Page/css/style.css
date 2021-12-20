@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html, body{
+  margin: 0px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; 
+}
+
+header, footer {
+  background-color: #ec1c0d;
+  color: #F9FAF8;
+}
+
+header{
+  padding: 20px 12.5% 10% 12.5%;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header p, header a {
+  font-size: 18px;
+  color: #E5E7EB;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+#logo {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+header p {
+  font-size: 18px;
+}
+
+img {
+  flex: 1;
+  max-width: 40%;
+  height: auto;
+}
+
+#header-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header-text-container {
+  width: 35%;
+  margin: 0px;
+  padding-right: 40px;
+}
+
+figure img {
+  height: 200px; 
+  /*limit height of image so figures vertical alignment is even*/
+  border-color: #345ea3;
+  border-style: solid;
+  border-width: 7px;
+  border-radius: 10px;
+}
+
+figure {
+  flex: none;
+  width: 300px; /*limit width of figure so that figcaptions are under images*/
+}
+
+button {
+  background-color: #3882F6;
+  border: none;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1F2937;
+  text-align: center;
+}
+
+#figure-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-bottom: 7.5%;
+}
+
+#quote-section{
+  background-color: #E5E7EB;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1F2937;
+  padding: 5% 30%;
+}
+
+#em {
+  width: 200px;
+}
+
+#quote-section p {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: right;
+}
+
+#signup-section {
+  padding: 5% 5%;
+}
+
+
+/*Blue portion of the signup section*/
+#signup-container{
+  background-color: #f638d6;
+  padding: 50px 30px;
+  border-radius: 15px;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#signup-section button {
+  border-style: solid;
+}
+
+#signup-prompt {
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+#signup-section p {
+  margin: 0px;
+  padding: 0px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0px;
+}
