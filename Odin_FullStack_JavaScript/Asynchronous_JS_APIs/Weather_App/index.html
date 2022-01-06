@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imgs/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/imgs/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/imgs/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/imgs/favicon/favicon.ico">
+
+    <meta name="apple-mobile-web-app-title" content="Weather?">
+    <meta name="application-name" content="Weather?">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="/imgs/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Weather..?</title>
+
+</head>
+
+<body style="background-color: black;">
+
+    <section class="menu">
+        <h1 class="menu__logo">Weather..?</h1>
+        <p class="menu__subtitle">Know the Climate...</p>
+
+        <div class="menu__search-box search-box">
+            <input type="text" class="search-box__input" placeholder="Search Location">
+            <img class="search-box__icon" src="./imgs/search_icon.svg" alt="">
+        </div>
+
+        <div class="menu__last-searches last-searches">
+            <hr class="last-searches__hr">
+            <h2 class="last-searches__title">Last searches</h2>
+            <ul class="last-searches__list">
+            </ul>
+        </div>
+    </section>
+
+    <div class="start-overlay">
+        <img class="start-overlay__icon" src="./imgs/overlay_icon.svg" alt="A smiley sun">
+        <p class="start-overlay__msg">
+            <strong>Let's search...!</strong>
+        </p>
+    </div>
+    
+    <main class="main">
+        <div class="main__location location">
+            <img src="./imgs/loc_icon.svg" alt="" class="location__icon">
+            <p class="location__city">Kyiv</p>
+            <p class="location__country">Ukraine</p>
+        </div>
+        <img src="./imgs/clouds_icon.svg" alt="" class="main__img">
+        <div class="main__info-box info-box">
+            <p class="info-box__date">Mon, 15 Aug</p>
+            <p class="info-box__main">Clouds</p>
+            <p class="info-box__temp">28 &deg;C</p>
+            <p class="info-box__description">Scattered clouds: 25-50%</p>
+            <ul class="info-box__params">
+                <li class="info-box__parameter parameter">
+                    <img src="./imgs/wind_icon.svg" alt="" class="parameter__icon">
+                    <span class="parameter__data">4 km/h</span>
+                </li>
+                <li class="info-box__parameter parameter">
+                    <img src="./imgs/hum_icon.svg" alt="" class="parameter__icon">
+                    <span class="parameter__data">47 %</span>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <script src="weather.js"></script>
+</body>
+</html>

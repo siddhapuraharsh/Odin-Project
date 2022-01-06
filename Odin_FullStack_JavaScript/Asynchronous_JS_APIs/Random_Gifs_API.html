@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gifs...</title>
+</head>
+<body>
+  <style>
+    body {
+      background-color: #110f11;
+      background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2016/09/13/1016976/95636de72efa89e3d6b9aef8931a3d86-700.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      height: 90vh;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+  <img src="#" alt="cat">
+  <script>
+  const img = document.querySelector('img')
+  fetch('https://api.giphy.com/v1/gifs/translate?api_key=bb2006d9d3454578be1a99cfad65913d&s=cat', {mode: 'cors'})
+    .then(function(response) {
+      return response.json()
+    })
+    .then(function(response) {
+      img.src = response.data.images.original.url
+    })
+    .catch(e => {
+      console.log(e)
+    })
+</script>
+</body>
+</html>
